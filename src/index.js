@@ -1,9 +1,10 @@
 export default function generateStrongPassword(length = 12) {
     const allowedPasswordCharacters =
    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^& *()_+";
+   let strongPassword;
    do
    {
-    const strongPassword = Array
+    strongPassword = Array
     .from(
     { length },
     () => {

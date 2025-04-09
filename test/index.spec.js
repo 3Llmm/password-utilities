@@ -56,4 +56,12 @@ describe('isStrongPassword', () => {
         expect(isStrongPassword('Abcdef123')).toBe(false);
         expect(isStrongPassword('Password123')).toBe(false);
     });
+
+
+    test('should create strong passwords even with minimum length', () => {
+        const password = generateStrongPassword(8);
+        
+        expect(password.length).toBe(8);
+        expect(isStrongPassword(password)).toBe(true);
+      });
 });
