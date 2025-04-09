@@ -23,7 +23,7 @@ yarn add @rasberi/password-utilities
 
 Basic Usage
 
-js
+```js
 import { generateStrongPassword, isStrongPassword } from '@rasberi/password-utilities';
 
 // Generate a strong password
@@ -34,7 +34,7 @@ const checkPassword = isStrongPassword(newPassword);
 
 console.log(newPassword);  
 console.log(checkPassword); 
-
+```
 
 ### Examples
 
