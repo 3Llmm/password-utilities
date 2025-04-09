@@ -59,21 +59,6 @@ const isValid = isStrongPassword(userInput);
 console.log(isValid);
 
 ```
-Ensure newly generated passwords meet strength requirements:
-
-```js
-import { generateStrongPassword, isStrongPassword } from '@yourusername/password-utilities';
-
-let password = generateStrongPassword(12);
-
-while (!isStrongPassword(password)) {
-  password = generateStrongPassword(12);
-}
-
-console.log(password); 
-```
-
-
 
 ## Contribution
 
