@@ -19,6 +19,61 @@ Install via yarn:
 bash
 yarn add @rasberi/password-utilities
 
+## Usage
+
+Basic Usage
+
+js
+import { generateStrongPassword, isStrongPassword } from '@rasberi/password-utilities';
+
+// Generate a strong password
+const newPassword = generateStrongPassword(12);
+
+// Check if a password is strong
+const checkPassword = isStrongPassword(newPassword);
+
+console.log(newPassword);  
+console.log(checkPassword); 
+
+
+### Examples
+
+Generate a strong password for user account creation: 
+
+```js
+import { generateStrongPassword } from '@rasberi/password-utilities';
+
+const userPassword = generateStrongPassword(16);
+
+console.log(userPassword); 
+
+```
+Validate user input (registration):
+
+```js
+import { isStrongPassword } from '@rasberi/password-utilities';
+
+const userInput = '1234abcd';
+const isValid = isStrongPassword(userInput);
+
+console.log(isValid);
+
+```
+Ensure newly generated passwords meet strength requirements:
+
+```js
+import { generateStrongPassword, isStrongPassword } from '@yourusername/password-utilities';
+
+let password = generateStrongPassword(12);
+
+while (!isStrongPassword(password)) {
+  password = generateStrongPassword(12);
+}
+
+console.log(password); 
+```
+
+
 
 ## Contribution
 
