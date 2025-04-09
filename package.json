@@ -1,6 +1,6 @@
 {
   "name": "@rasberi/password-utilities",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A small library that generates and checks strong password.",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
