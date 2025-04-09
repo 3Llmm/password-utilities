@@ -1,0 +1,33 @@
+{
+  "name": "@rasberi/password-utilities",
+  "version": "1.0.0",
+  "description": "A small library that generates and checks strong password.",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "microbundle",
+    "pretest": "npm run build",
+    "test": "npx jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3Llmm/password-utilities.git"
+  },
+  "keywords": [
+    "password",
+    "generates",
+    "strong"
+  ],
+  "author": "if23b090,if23b123",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3Llmm/password-utilities/issues"
+  },
+  "homepage": "https://github.com/3Llmm/password-utilities#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1"
+  }
+}
