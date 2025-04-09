@@ -15,7 +15,7 @@ export default function generateStrongPassword(length = 12) {
     return strongPassword;
    }
    
-   export default function isStrongPassword(password) {
+   export function isStrongPassword(password) {
     if (password.length < 8) {
     return false;
     }

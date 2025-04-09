@@ -1,5 +1,6 @@
-const generate = require('../dist/index');
-const isPasswordStrong = require('../dist/index');
+const passwordModule = require('../dist/index');
+const generateStrongPassword = passwordModule.default;
+const isStrongPassword = passwordModule.isStrongPassword;
 
 
 describe('generateStrongPassword', () => {
